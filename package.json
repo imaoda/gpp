@@ -1,0 +1,12 @@
+{
+  "name": "gpp",
+  "version": "1.0.1",
+  "description": "shortcut of git add + git commit -m + git push",
+  "main": "index.js",
+  "repository": "https://github.com/imaoda/gpp",
+  "bin": {
+    "gpp": "bin/maoda"
+  },
+  "author": "wangyongfeng",
+  "license": "MIT"
+}
