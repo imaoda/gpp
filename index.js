@@ -16,20 +16,20 @@ module.exports = function (needToPush) {
   
   execSync("git add .");
   
-  let msg = process.argv.slice(3).join(" ");
+  let msg = process.argv.slice(2).join(" ");
   
   if (!msg) msg = "update";
   
   const gm = spawn("git", ["commit", "-m", msg]);
   
-  gm.stdout.on("data", data => process.stdout.write(data));
-  gm.stderr.on("data", data => process.stderr.write(data));
+  gm.stderr.pipe(process.stderr)
+  gm.stdout.pipe(process.stdout)
   
   gm.on("close", code => {
     if (code === 0 && needToPush) {
       const gp = spawn("git", ["push"]);
-      gp.stdout.on("data", data => process.stdout.write(data));
-      gp.stderr.on("data", data => process.stderr.write(data));
+      gp.stderr.pipe(process.stderr)
+      gp.stdout.pipe(process.stdout)
     }
   });
 }
