@@ -16,7 +16,7 @@ npm i gpp -g
 一条命令，一次性执行: `git add .` 、 `git commit -m 信息` 和 `git push`
 
 ```sh
-gpp 任何需要commit的信息(支持空格)
+gpp 任何需要commit的信息
 ```
 
 带空格的提交：
@@ -30,6 +30,12 @@ gpp 首页优化 接口替换
 ```sh
 # 缺省信息为 update
 gpp
+```
+
+只 commit 不 push
+
+```sh
+gmm 任何需要commit的信息(缺省为update)
 ```
 
 ## Author
