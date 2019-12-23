@@ -6,7 +6,9 @@
   "repository": "https://github.com/imaoda/gpp",
   "bin": {
     "gpp": "bin/maoda",
-    "gmm": "bin/maodac"
+    "gmm": "bin/maodac",
+    "ggp": "bin/maodam",
+    "ggm": "bin/maodamc"
   },
   "author": "wangyongfeng",
   "license": "MIT"

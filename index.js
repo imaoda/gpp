@@ -1,11 +1,11 @@
 const { execSync, spawn } = require("child_process");
 const fs = require("fs");
 
-module.exports = function (needToPush) {
-  if (!fs.existsSync(".git")) {
-    console.log("error: 当前工程不含 git");
-    process.exit(1);
-  }
+module.exports = function (needToPush, needAddMsg) {
+  // if (!fs.existsSync(".git")) {
+  //   console.log("error: 当前工程不含 git");
+  //   process.exit(1);
+  // }
   
   try {
     execSync("which git");
@@ -19,6 +19,11 @@ module.exports = function (needToPush) {
   let msg = process.argv.slice(2).join(" ");
   
   if (!msg) msg = "update";
+
+  if (needAddMsg) {
+    if(!msg.match(/^(feat|fix|bug|docs|style|merge|test)/gim))
+    msg = 'feat: ' + msg
+  }
   
   const gm = spawn("git", ["commit", "-m", msg]);
   
