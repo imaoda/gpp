@@ -1,7 +1,8 @@
 const { spawn } = require("child_process");
+const path = require('path')
 
 const args = process.argv.slice(2)
-const scripts = require('./package.json').scripts || {}
+const scripts = require(path.join(process.cwd(), 'package.json')).scripts || {}
 
 const command = scripts.dev ? 'dev' : scripts.serve ? 'serve' : 'start'
 args.unshift(command)
