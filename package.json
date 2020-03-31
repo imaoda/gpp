@@ -1,6 +1,6 @@
 {
   "name": "gpp",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "shortcut of git add + git commit -m + git push",
   "main": "index.js",
   "repository": "https://github.com/imaoda/gpp",
