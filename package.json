@@ -10,6 +10,7 @@
     "gmm": "bin/maodac",
     "ggpp": "bin/maodam",
     "ggmm": "bin/maodamc",
+    "gsss": "bin/gsss",
     "ys": "bin/ys"
   },
   "author": "wangyongfeng",
