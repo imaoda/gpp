@@ -1,6 +1,6 @@
 {
   "name": "gpp",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "shortcut of git add + git commit -m + git push",
   "main": "index.js",
   "repository": "https://github.com/imaoda/gpp",
@@ -11,7 +11,8 @@
     "ggpp": "bin/maodam",
     "ggmm": "bin/maodamc",
     "gsss": "bin/gsss",
-    "ys": "bin/ys"
+    "ys": "bin/ys",
+    "gtag": "bin/gtag"
   },
   "author": "wangyongfeng",
   "license": "MIT"
