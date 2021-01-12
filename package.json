@@ -12,7 +12,8 @@
     "ggmm": "bin/maodamc",
     "gsss": "bin/gsss",
     "ys": "bin/ys",
-    "gtag": "bin/gtag"
+    "gtag": "bin/gtag",
+    "gls": "bin/gls"
   },
   "author": "wangyongfeng",
   "license": "MIT"
