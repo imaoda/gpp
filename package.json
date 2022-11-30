@@ -1,6 +1,6 @@
 {
   "name": "gpp",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "shortcut of git add + git commit -m + git push",
   "main": "index.js",
   "repository": "https://github.com/imaoda/gpp",
@@ -9,6 +9,7 @@
     "gpp": "bin/maoda",
     "gmm": "bin/maodac",
     "ggpp": "bin/maodam",
+    "ggppf": "bin/maodamf",
     "ggmm": "bin/maodamc",
     "gsss": "bin/gsss",
     "ys": "bin/ys",
